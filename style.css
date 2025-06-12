@@ -1,0 +1,386 @@
+@font-face {
+    font-family: 'StarWarsFont';
+    src: url('Fonts/SFDistantGalaxy.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Aurabesh';
+    src: url('Fonts/Aurebesh.otf') format('opentype');
+}
+/* Cała Strona */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    font-family: 'StarWarsFont';
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+.topbar {
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    gap: 7vw;
+    font-size: 1.35vw;
+    background-color: rgba(0,0,0,0.7);
+    flex-shrink: 0;
+}
+.aurabesh {
+    font-family: 'Aurabesh';
+}
+.topbar-center {
+    align-items: center;
+    justify-content: center;
+}
+.bottombar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    height: 10vw;
+    font-size: 1.35vw;
+    gap: 7vw;
+    justify-content: center;
+}
+.bottombar-2 {
+    margin-top: 5vw;
+    height: 10vw;
+    background-color: rgb(4, 5, 22);
+    flex-shrink: 0;
+}
+/* Home */
+.home-main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.title {
+    font-size: 7vw;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0vw 0vw 3vw black, 0vw 0vw 3vw black;
+}
+a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0vw 0vw 1vw white, 0vw 0vw 20px black;
+}
+a:hover {
+    color: rgb(0, 119, 255);;
+    text-shadow: 0vw 0vw 1vw rgb(0, 119, 255), 0vw 0vw 2vw rgb(30, 144, 255);
+}
+.home {
+    background-image: url('Backgrounds/background6.gif');
+}
+/* Chronology */
+.chronology {
+    background-color: rgb(9, 11, 44);
+}
+.chronology-main-content {
+    color: white;
+    text-shadow: 0vw 0vw 3vw black, 0vw 0vw 3vw black;
+    margin-top: 15vw;
+    justify-content: center;
+    text-align: center;
+    gap: 2vw;
+    margin-bottom: 10vw;
+}
+.galeria-main {
+    margin-bottom: 10vh;
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+}
+.element {
+    text-align: center;
+}
+.element p {
+    margin-top: 0.8vw;
+    font-size: 1vw;
+}
+.element img {
+    margin-top: 60px;
+    width: 17.5vw;
+    height: 25vw;
+    border-radius: 2.5vw;
+    object-fit: cover;
+}
+.element img:hover {
+    box-shadow: 0vw 0vw 4vw rgb(255, 255, 255);
+}
+.canon-side-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10vw;
+}
+.canon-side-content-title {
+    justify-content: center;
+    text-align: center;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+.canon-side-content p, .canon-side-content-title {
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+/* Battlefront II */
+.battlefront2 {
+    background-color: rgb(9, 11, 44);
+}
+.battlefront2-main-content {
+    color: white;
+    margin-top: 15vw;
+    justify-content: center;
+    text-align: center;
+}
+.hero-title {
+    margin-bottom: 0.5vw;
+    font-size: 2vw;
+    text-shadow: 0vw 0vw 3vw black, 0vw 0vw 3vw black;
+}
+.aurabesh-title {
+    font-family: 'Aurabesh';
+    margin-bottom: 0.5vw;
+    font-size: 1.3vw;
+    text-shadow: 0vw 0vw 3vw black, 0vw 0vw 3vw black;
+}
+.hero {
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero img {
+    width: 16vw;
+    height: 16vw;
+    object-fit: cover;
+    border-radius: 2.5vw;
+    box-shadow: 0vw 0vw 5vw rgb(0, 0, 0);
+}
+.weapon {
+    text-align: center;
+    margin-top: 1vw;
+}
+.weapon img {
+    width: auto;
+    height: 3vw;
+}
+.weapon p {
+    font-size: 0.9vw;
+    text-shadow: 0vw 0vw 2vw black, 0 0 2vw black;
+    margin-bottom: 1vw;
+}
+.logo {
+    text-align: center;
+    margin-top: 1vw;
+}
+.logo img {
+    width: auto;
+    height: 5vw;
+}
+.logo p {
+    font-size: 0.9vw;
+    text-shadow: 0 0 2vw black, 0 0 2vw black;
+    margin-bottom: 1vw;
+}
+.deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1vw;
+    margin: 5vw 0;
+}
+.section-title {
+    margin-bottom: 1vw;
+    font-size: 1.25vw;
+    text-shadow: 0 0 2vw black, 0 0 2vw black;
+}
+.card-group {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-group .card-container {
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+}
+.card {
+    text-align: center;
+}
+.card img {
+    width: 9vw;
+    height: auto;
+    border-radius: 1.5vw;
+    box-shadow: 0vw 0vw 2vw rgb(0, 0, 0);
+}
+.card p {
+    margin-top: 0.5vw;
+    font-size: 0.6vw;
+    text-shadow: 0vw 0vw 2vw black, 0vw 0vw 2vw black;
+}
+hr {
+    width: 90vw;
+    height: 0.5vw;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 2vw;
+    box-shadow: 0vw 0vw 1vw rgb(0, 119, 255);
+    margin-bottom: 5vw;
+}
+/* Library */
+.library {
+    background-color: rgb(9, 11, 44);
+}
+.library-main-content {
+    color: white;
+}
+.library-space {
+    margin-top: 20vw;
+}
+.library-container {
+    display: flex;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+.library-title {
+    margin-bottom: 1vw;
+    font-size: 2vw;
+    text-shadow: 0vw 0vw 1vw black, 0vw 0vw 1vw black;
+}
+.library-title-aurabesh {
+    font-family: 'Aurabesh';
+    margin-bottom: 2vw;
+    font-size: 1.5vw;
+    text-shadow: 0vw 0vw 1vw black, 0vw 0vw 1vw black;
+}
+.library-text-container {
+    width: 50vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.library-text {
+    text-align: left;
+    font-size: 1vw;
+    line-height: 1.3vw;
+    color: white;
+    -webkit-text-stroke: 0.02vw rgb(9, 11, 44);
+}
+.library-left, .library-right {
+    width: 25vw;
+}
+.library-right {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.library-right img {
+    width: 20vw;
+    height: auto;
+    border-radius: 2.5vw;
+    box-shadow: 0vw 0vw 2vw rgb(0, 0, 0);
+    object-fit: cover;
+}
+/* ScrollBar Lightsaber */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #fff 0%, rgb(0, 60, 255) 50%, #fff 100%);
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgb(0, 60, 255), 0 0 20px rgb(0, 60, 255);
+  border: 2px solid #222;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #fff 0%, #0ff 50%, #fff 100%);
+  box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+}
+/* MENU */
+.menu-container {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2vw;
+    height: 1vw;
+    cursor: pointer;
+    margin-left: 2vw;
+}
+
+.bar {
+    height: 0.195vw;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 1vw white, 0 0 20px black;
+}
+
+.menu, .dropdown {
+    left: 0;
+    width: 13vw;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    float: left;
+}
+
+.menu div, .dropdown a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1vw;
+    margin: 0.5vw 0;
+    transition: background 0.2s;
+    font-size: 0.85vw;
+    cursor: pointer;
+    text-shadow: 0 0 1vw white, 0 0 20px black;
+}
+
+.menu div:hover, .dropdown a:hover {
+    color: rgb(0, 119, 255);
+    text-shadow: 0 0 1vw rgb(0, 119, 255), 0 0 2vw rgb(30, 144, 255);
+    cursor: pointer;
+}
+
+.menu.active, .dropdown.active {
+    display: flex;
+}
+.menu, .galaxy, .characters, .vehicles-starships, .weapons, .factions, .history{
+    margin-top: 10vw;
+}
+.galaxy, .characters, .vehicles-starships, .weapons, .factions, .history {
+    left: 13vw;
+}
